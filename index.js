@@ -1,6 +1,6 @@
 function createLoginTracker({ username, password }) {
-  let attemptCount = 0;
-  const maxAttempts = 3;
+  var attemptCount = 0;
+  var maxAttempts = 3;
 
   return (passwordAttempt) => {
     if (attemptCount >= maxAttempts) {
